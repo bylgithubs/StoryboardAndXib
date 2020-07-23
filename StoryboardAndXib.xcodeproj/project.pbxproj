@@ -21,6 +21,8 @@
 		641313BE24C6D65500F166EF /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 641313BD24C6D65500F166EF /* TableViewCell.xib */; };
 		641313C124C6DC1000F166EF /* StoryboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 641313C024C6DC1000F166EF /* StoryboardViewController.m */; };
 		641313C324C6DC3400F166EF /* StoryboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 641313C224C6DC3400F166EF /* StoryboardViewController.storyboard */; };
+		6475AB4B24C92DBA00CFE0FD /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6475AB4A24C92DBA00CFE0FD /* FirstViewController.m */; };
+		6475AB4E24C92DCB00CFE0FD /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6475AB4D24C92DCB00CFE0FD /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,10 @@
 		641313BF24C6DC1000F166EF /* StoryboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoryboardViewController.h; sourceTree = "<group>"; };
 		641313C024C6DC1000F166EF /* StoryboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoryboardViewController.m; sourceTree = "<group>"; };
 		641313C224C6DC3400F166EF /* StoryboardViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoryboardViewController.storyboard; sourceTree = "<group>"; };
+		6475AB4924C92DBA00CFE0FD /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		6475AB4A24C92DBA00CFE0FD /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		6475AB4C24C92DCB00CFE0FD /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		6475AB4D24C92DCB00CFE0FD /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,10 @@
 				641313BF24C6DC1000F166EF /* StoryboardViewController.h */,
 				641313C024C6DC1000F166EF /* StoryboardViewController.m */,
 				641313C224C6DC3400F166EF /* StoryboardViewController.storyboard */,
+				6475AB4924C92DBA00CFE0FD /* FirstViewController.h */,
+				6475AB4A24C92DBA00CFE0FD /* FirstViewController.m */,
+				6475AB4C24C92DCB00CFE0FD /* SecondViewController.h */,
+				6475AB4D24C92DCB00CFE0FD /* SecondViewController.m */,
 			);
 			path = StoryboardAndXib;
 			sourceTree = "<group>";
@@ -177,6 +187,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6475AB4E24C92DCB00CFE0FD /* SecondViewController.m in Sources */,
 				6413139D24C6BBCC00F166EF /* main.m in Sources */,
 				641313BC24C6D60800F166EF /* TableViewCell.m in Sources */,
 				6413138F24C6BBCA00F166EF /* AppDelegate.m in Sources */,
@@ -184,6 +195,7 @@
 				641313AA24C6BF7000F166EF /* XibViewController.m in Sources */,
 				641313B924C6D58500F166EF /* TableViewController.m in Sources */,
 				641313A524C6BC1700F166EF /* MainViewController.m in Sources */,
+				6475AB4B24C92DBA00CFE0FD /* FirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

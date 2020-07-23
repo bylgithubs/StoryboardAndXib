@@ -13,7 +13,6 @@
         <!--Storyboard View Controller-->
         <scene sceneID="qYo-yr-wJ9">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gUm-I9-azo" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="85Z-oO-ev8" customClass="StoryboardViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6Yg-mu-y0b">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -29,13 +28,14 @@
                         <segue destination="jch-Hg-r4Y" kind="show" identifier="SecondVC" id="qH6-Xd-qci"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gUm-I9-azo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-190" y="76"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="dx0-an-jiT">
             <objects>
-                <viewController id="jch-Hg-r4Y" sceneMemberID="viewController">
+                <viewController id="jch-Hg-r4Y" customClass="SecondViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qV3-oC-32y">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -47,10 +47,10 @@
             </objects>
             <point key="canvasLocation" x="1061" y="469"/>
         </scene>
-        <!--View Controller-->
+        <!--First View Controller-->
         <scene sceneID="RrB-5W-6rF">
             <objects>
-                <viewController id="1jM-8r-rZY" sceneMemberID="viewController">
+                <viewController id="1jM-8r-rZY" customClass="FirstViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="R0V-SH-oAD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

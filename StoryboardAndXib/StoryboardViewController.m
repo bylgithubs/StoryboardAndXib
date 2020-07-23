@@ -10,20 +10,39 @@
 
 @interface StoryboardViewController ()<UITableViewDataSource,UITableViewDelegate>
 
+@property(nonatomic,strong) UITableView *tableView;
+@property(nonatomic,strong) NSMutableArray *dataArr;
+
 @end
 
 @implementation StoryboardViewController
+//@synthesize tableView;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.dataArr = [[NSMutableArray alloc] init];
 }
 
 //页面跳转传值，segue为连接两个ViewController之间的线，sender为触发按钮
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    UIViewController *destination = segue.destinationViewController;
+    UIViewController *source = segue.sourceViewController;
     if ([segue.identifier isEqualToString:@"FirstVC"]) {
+        [destination setValue:self forKey:@"delegate"];
         NSLog(@"第一个页面");
     } else {
+        NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
+        id object;
+        if ((self.dataArr.count > indexPath.row)) {
+            object = self.dataArr[indexPath.row];
+        }else{
+            object = nil;
+        }
+        //NSDictionary *dic = @{@"indexPath" : indexPath, @"object" : object};
+        NSDictionary *dic = @{@"viewName":destination};
+        
+        [destination setValue:dic forKey:@"dic"];
         NSLog(@"第二个页面");
     }
 
