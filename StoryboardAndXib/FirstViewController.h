@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface FirstViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UITextField *textField1;
+
+@property (strong, nonatomic) IBOutlet UITextField *textField2;
 @end
 
 NS_ASSUME_NONNULL_END

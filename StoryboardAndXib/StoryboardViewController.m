@@ -29,7 +29,7 @@
     UIViewController *destination = segue.destinationViewController;
     UIViewController *source = segue.sourceViewController;
     if ([segue.identifier isEqualToString:@"FirstVC"]) {
-        [destination setValue:self forKey:@"delegate"];
+        //[destination setValue:self forKey:@"delegate"];
         NSLog(@"第一个页面");
     } else {
         NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];

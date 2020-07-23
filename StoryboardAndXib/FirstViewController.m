@@ -13,11 +13,24 @@
 @end
 
 @implementation FirstViewController
+@synthesize textField1;
+@synthesize textField2;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    NSString *copyString = @"textField output!";
+    UIPasteboard *pb = [UIPasteboard generalPasteboard];
+    [pb setString:copyString];
+    //光标聚集在textField1,textField1成为第一响应
+    [textField1 becomeFirstResponder];
+}
+- (IBAction)SwitchPaste:(id)sender {
+    if ([textField1 isFirstResponder]) {
+        [textField2 becomeFirstResponder];
+    } else {
+        [textField1 becomeFirstResponder];
+    }
 }
 
 /*
